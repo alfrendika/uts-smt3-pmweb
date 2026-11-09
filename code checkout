@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pemesanan | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<header class="topbar"><a class="brand" href="dashboard.html"><img src="assets/logo.svg" alt="Logo BukuKu" width="32" height="32"> BukuKu</a><nav aria-label="Navigasi utama"><a href="dashboard.html">Dashboard</a><a href="stok.html">Katalog</a><a href="checkout.html" class="aktif">Pemesanan</a><a href="tracking.html">Tracking</a><a href="laporan.html">Laporan</a><a href="history.html">History</a><button id="btnLogout" class="btn sm" type="button">Keluar</button></nav></header>
+<main class="container">
+<section class="card"><h1>Pemesanan Buku</h1>
+<div class="row"><select id="selBuku" aria-label="Pilih buku"></select><button class="btn" id="btnTambah" type="button">+ Tambah ke Pesanan</button></div>
+<div class="scroll"><table id="tbCart"><thead><tr><th>Buku</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead><tbody></tbody></table></div>
+<p class="total">Total: <strong id="total">Rp0</strong></p></section>
+<section class="card"><h2>Data Pemesan &amp; Pembayaran</h2>
+<form id="formCo" class="form-grid" novalidate>
+<div><label for="nama">Nama pemesan</label><input id="nama"></div>
+<div><label for="emailCo">Email</label><input type="email" id="emailCo"></div>
+<div><label for="telp">No. telepon</label><input id="telp" placeholder="08xxxxxxxxxx"></div>
+<div><label for="alamat">Alamat pengiriman</label><textarea id="alamat" rows="2"></textarea></div>
+<div><label for="ekspedisi">Ekspedisi</label><select id="ekspedisi"><option>JNE</option><option>J&amp;T</option><option>SiCepat</option></select></div>
+<div><label for="paket">Jenis paket</label><select id="paket"><option>Reguler</option><option>Express</option></select></div>
+<div><label for="metode">Metode pembayaran</label><select id="metode"><option value="">-- Pilih --</option><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select></div>
+<div class="end"><button class="btn" type="submit">Pesan Sekarang</button></div>
+</form><ul id="errCo" class="error" role="alert"></ul></section>
+</main>
+<footer class="footer"><p>&copy; 2026 BukuKu - Tugas UTS Pemrograman Web 1</p></footer>
+
+<div class="modal" id="msgModal" role="dialog" aria-modal="true" aria-labelledby="msgTitle"><div class="modal-box"><h2 id="msgTitle"></h2><div id="msgBody"></div><button class="btn" data-close type="button">Tutup</button></div></div>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

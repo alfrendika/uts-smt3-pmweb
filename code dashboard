@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+<header class="topbar"><a class="brand" href="dashboard.html"><img src="assets/logo.svg" alt="Logo BukuKu" width="32" height="32"> BukuKu</a><nav aria-label="Navigasi utama"><a href="dashboard.html" class="aktif">Dashboard</a><a href="stok.html">Katalog</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a><a href="laporan.html">Laporan</a><a href="history.html">History</a><button id="btnLogout" class="btn sm" type="button">Keluar</button></nav></header>
+<main class="container">
+<section class="card"><h1 id="greeting">Halo!</h1><p id="jam" class="muted"></p></section>
+<section aria-label="Menu utama" class="grid">
+<a class="menu-card" href="stok.html"><span>📚</span><h2>Informasi Stok / Katalog</h2><p>Lihat dan tambah stok buku</p></a>
+<a class="menu-card" href="tracking.html"><span>🚚</span><h2>Tracking Pengiriman</h2><p>Lacak pesanan dengan nomor DO</p></a>
+<a class="menu-card" href="laporan.html"><span>📊</span><h2>Laporan Pemesanan</h2><p>Ringkasan penjualan</p></a>
+<a class="menu-card" href="history.html"><span>🧾</span><h2>History Transaksi</h2><p>Riwayat seluruh pesanan</p></a>
+<a class="menu-card" href="checkout.html"><span>🛒</span><h2>Buat Pesanan</h2><p>Checkout buku</p></a>
+</section>
+</main>
+<footer class="footer"><p>&copy; 2026 BukuKu - Tugas UTS Pemrograman Web 1</p></footer>
+
+<div class="modal" id="msgModal" role="dialog" aria-modal="true" aria-labelledby="msgTitle"><div class="modal-box"><h2 id="msgTitle"></h2><div id="msgBody"></div><button class="btn" data-close type="button">Tutup</button></div></div>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

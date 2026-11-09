@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="history">
+<header class="topbar"><a class="brand" href="dashboard.html"><img src="assets/logo.svg" alt="Logo BukuKu" width="32" height="32"> BukuKu</a><nav aria-label="Navigasi utama"><a href="dashboard.html">Dashboard</a><a href="stok.html">Katalog</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a><a href="laporan.html">Laporan</a><a href="history.html" class="aktif">History</a><button id="btnLogout" class="btn sm" type="button">Keluar</button></nav></header>
+<main class="container">
+<section class="card"><h1>History Transaksi</h1>
+<div class="scroll"><table id="tbHistory"><thead><tr><th>No. DO</th><th>Tanggal</th><th>Pemesan</th><th>Metode</th><th>Status</th><th>Total</th></tr></thead><tbody></tbody></table></div></section>
+</main>
+<footer class="footer"><p>&copy; 2026 BukuKu - Tugas UTS Pemrograman Web 1</p></footer>
+
+<div class="modal" id="msgModal" role="dialog" aria-modal="true" aria-labelledby="msgTitle"><div class="modal-box"><h2 id="msgTitle"></h2><div id="msgBody"></div><button class="btn" data-close type="button">Tutup</button></div></div>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Stok | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+<header class="topbar"><a class="brand" href="dashboard.html"><img src="assets/logo.svg" alt="Logo BukuKu" width="32" height="32"> BukuKu</a><nav aria-label="Navigasi utama"><a href="dashboard.html">Dashboard</a><a href="stok.html" class="aktif">Katalog</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a><a href="laporan.html">Laporan</a><a href="history.html">History</a><button id="btnLogout" class="btn sm" type="button">Keluar</button></nav></header>
+<main class="container">
+<section class="card"><h1>Informasi Stok / Katalog Buku</h1>
+<input type="search" id="cari" placeholder="Cari judul atau kode buku..." aria-label="Cari buku">
+<div class="scroll"><table id="tbStok"><thead><tr><th>Cover</th><th>Kode</th><th>Judul</th><th>Kategori</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead><tbody></tbody></table></div></section>
+<section class="card"><h2>Tambah Stok Baru</h2>
+<form id="formStok" class="form-grid" novalidate>
+<div><label for="kode">Kode</label><input id="kode" placeholder="BK007"></div>
+<div><label for="judul">Judul</label><input id="judul"></div>
+<div><label for="kategori">Kategori</label><input id="kategori"></div>
+<div><label for="harga">Harga (Rp)</label><input type="number" id="harga" min="1"></div>
+<div><label for="stok">Stok</label><input type="number" id="stok" min="0"></div>
+<div class="end"><button class="btn" type="submit">Tambah Baris</button></div>
+</form><p id="errStok" class="error" role="alert"></p></section>
+</main>
+<footer class="footer"><p>&copy; 2026 BukuKu - Tugas UTS Pemrograman Web 1</p></footer>
+
+<div class="modal" id="msgModal" role="dialog" aria-modal="true" aria-labelledby="msgTitle"><div class="modal-box"><h2 id="msgTitle"></h2><div id="msgBody"></div><button class="btn" data-close type="button">Tutup</button></div></div>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
